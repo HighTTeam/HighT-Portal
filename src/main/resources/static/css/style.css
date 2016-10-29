@@ -1,0 +1,75 @@
+body {
+    font-family: "helveticaneue-light";
+    font-size: 16px;
+    color: #333;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.goodbye {
+    color: #fff;
+    background-color: #f00;
+}
+
+.hello {
+    position: absolute;
+    top: 0;
+    height: 120px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 120px;
+    color: #1F681F;
+}
+
+.my-index {
+    position: absolute;
+    top: 120px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: #298a29;
+}
+
+.index {
+    position: absolute;
+    top: 180px;
+    height: 120px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    line-height: 90px;
+    background-color: #74bd69;
+}
+
+.mid-color {
+    position: absolute;
+    top: 270px;
+    height: 90px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    background-color: #629b59;
+}
+
+.bottom-color {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #1F681F;
+    height: 100%;
+}

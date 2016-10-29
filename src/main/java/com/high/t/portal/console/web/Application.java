@@ -1,4 +1,4 @@
-package com.high.t;
+package com.high.t.portal.console.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,6 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) {
+
+
         SpringApplication.run(Application.class, args);
         System.out.println("High T Portal server ready ...");
 
