@@ -1,4 +1,4 @@
-package com.high.t.portal.console.web.controller;
+package com.high.t.portal.demo.controller;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;

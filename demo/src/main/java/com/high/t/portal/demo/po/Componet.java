@@ -1,4 +1,4 @@
-package com.high.t.portal.console.web.po;
+package com.high.t.portal.demo.po;
 
 /**
  * Created by gibson.luo on 2016/10/29.

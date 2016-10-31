@@ -1,4 +1,4 @@
-package com.high.t.portal.console.web;
+package com.high.t.portal.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
