@@ -27,6 +27,14 @@ public class HelloController {
         this.environment = environment;
     }
 
+    @RequestMapping("/index")
+    public ModelAndView index(){
+        ModelAndView modelAndView = new ModelAndView("index");
+        modelAndView.addObject("title", "Spring Boot ");
+        return modelAndView;
+    }
+
+
     @RequestMapping("/")
     public ModelAndView hello(){
         ModelAndView modelAndView = new ModelAndView("hello");
