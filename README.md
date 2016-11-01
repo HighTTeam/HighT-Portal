@@ -4,10 +4,11 @@
 Portal, 传送门的意思，旨在为各种系统提供统一的入口。有它可以自由在各种系统间切换。还提供统一的权限管理，方便管理各系统的菜单权限。
 
 ## Technology Stack
-Spring Boot
-Thymeleaf
-Vue.js
-Semantic UI
+* Gradle
+* Spring Boot
+* Thymeleaf
+* Vue.js
+* Semantic UI
 
 ## Devtools in IntelliJ
 
