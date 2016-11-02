@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoder 默认配置为PatternLayoutEncoder -->
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+
+    <logger name="org.springframework.web" level="INFO"/>
+    <logger name="com.high.t.portal" level="TRACE" />
+
+    <springProfile name="dev">
+        <logger name="com.high.t.portal.console" level="DEBUG" >
+            <appender-ref ref="STDOUT"/>
+        </logger>
+    </springProfile>
+
+    <logger name="com.high.t.portal.console" level="INFO" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+
+
+    <springProfile name="staging">
+        <logger name="com.high.t.portal" level="INFO" />
+    </springProfile>
+
+
+
+
+</configuration>

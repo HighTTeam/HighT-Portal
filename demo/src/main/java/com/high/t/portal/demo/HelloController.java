@@ -1,4 +1,4 @@
-package com.high.t.portal.demo.demo;
+package com.high.t.portal.demo;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.core.env.Environment;
