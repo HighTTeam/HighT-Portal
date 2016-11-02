@@ -1,38 +1,33 @@
-buildscript {
-	ext {
-		springBootVersion = '1.4.1.RELEASE'
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'idea'
+	apply plugin: 'spring-boot'
+	bootRun {
+		addResources = true
+	}
+	buildscript {
+		ext {
+			springBootVersion = '1.4.1.RELEASE'
+		}
+		repositories {
+			mavenCentral()
+			maven { url 'http://repo.spring.io/plugins-release' }
+		}
+		dependencies {
+			classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+			classpath 'net.researchgate:gradle-release:2.3.4'
+		}
 	}
 	repositories {
 		mavenCentral()
-		maven { url 'http://repo.spring.io/plugins-release' }
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath 'net.researchgate:gradle-release:2.3.4'
+		compile('org.springframework.boot:spring-boot-devtools')
 	}
-}
-
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'spring-boot'
-apply plugin: 'net.researchgate.release'
-
-bootRun {
-	addResources = true
-}
-
-jar {
-	baseName = 'portal'
-	version = '0.0.1-SNAPSHOT'
-}
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-repositories {
-	maven{ url 'http://repo1.maven.org/maven2/'}
-}
-
-dependencies {
-	compile project(':demo')
-	compile('org.springframework.boot:spring-boot-devtools')
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+	version = '1.0'
+	jar {
+		manifest.attributes provider: 'gradle'
+	}
 }
