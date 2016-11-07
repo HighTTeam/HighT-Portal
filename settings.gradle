@@ -1,4 +1,3 @@
 include 'demo'
-include 'portal-api'
 include 'portal-web'
 
