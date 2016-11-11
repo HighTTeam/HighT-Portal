@@ -15,6 +15,9 @@
 *.iws
 *.iml
 *.ipr
+/demo/build/
+/portal-web/build/
+
 
 ### NetBeans ###
 nbproject/private/
@@ -23,3 +26,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
